@@ -11,7 +11,14 @@
 
         <div class="mt-4 row">
             <div class="col-4">
-                
+                <%= form_with(model: Room.new) do |f| %>
+                    <%= render "user_name_modal", f: f, action: "create" %>
+
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createModal">
+                        <%= image_tag 'icons/video_call' %>
+                        Nova reunião
+                    </button>
+                <% end %>
             </div>
 
             <div class="col-8">
