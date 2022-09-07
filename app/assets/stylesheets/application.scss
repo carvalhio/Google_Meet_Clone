@@ -3,3 +3,14 @@
 // Local imports
 @import "home";
 @import "rooms";
+
+.row {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    box-shadow: 0px 0px 10px rgba(10,10,10,0.3);
+    font-size: 1.3rem;
+    color: rgba(48, 47, 47, 0.8);
+}
